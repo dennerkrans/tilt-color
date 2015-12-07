@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -8,10 +7,11 @@
   </head>
   <body>
     <script type="text/javascript">
-      function scale (from_min, from_max, to_min, to_max) {
-        ((to_max - to_min) * (this - from_min)) / (from_max - from_min) + to_min;
+      function scaleRange(inputValue, inputMin, inputMax, outputMin, outputMax){
+        return (inputValue / ((inputMax - inputMin) / (outputMax - outputMin))) + outputMin;
       };
-      console.log(0.5.scale(0,1,100,200));
+      var c = scaleRange(50, 100, 0, 1, 0);
+      console.log(c);
     </script>
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://cdn.socket.io/socket.io-1.3.7.js"></script>
