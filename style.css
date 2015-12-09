@@ -1,3 +1,9 @@
-body {
-  border: 1vw solid #000;
+div {
+  height: 60vh;
+  width: 60vw;
+  border: .5vw solid #000;
+  margin: 20vh 0 0 20vw;
+  text-align: center;
+  font-size: 5vw;
+  font-family: monospace;
 }
