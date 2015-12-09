@@ -6,29 +6,8 @@
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
-    <script type="text/javascript">
-      function scaleRange(inputValue, inputMin, inputMax, outputMin, outputMax){
-        return parseInt(inputValue / ((inputMax - inputMin) / (outputMax - outputMin)) + outputMin);
-      };
-
-      var c = scaleRange(180, -180, 180, 0, 255);
-      console.log(c);
-
-      // window.addEventListener("deviceorientation", handleOrientation, true);
-      //
-      // function handleOrientation(event) {
-      //   var z = event.alpha; // In degree in the range [0, 360]
-      //   var x = event.beta; // In degree in the range [-180,180]
-      //   var y = event.gamma; // In degree in the range [-90,90]
-      //
-      //   if (x > 90) {x = 90};
-      //   if (x < -90) {x = -90};
-      // };
-
-
-
-    </script>
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://cdn.socket.io/socket.io-1.3.7.js"></script>
+    <script src="/tilt.js"></script>
   </body>
 </html>
