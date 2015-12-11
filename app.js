@@ -8,8 +8,9 @@ app.use(express.static(__dirname + '/'));
 
 io.on('connection', function(socket) {
   console.log('a user connected');
-  socket.on('message', function(message){
-    console.log('This is the message: ' + message);
+  socket.on('colors', function(color){
+    console.log('This is the color: ' + color);
+    io.emit('colors', color);
   });
 });
 
